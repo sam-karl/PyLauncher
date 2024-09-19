@@ -17,7 +17,9 @@ PyLauncher is a simple utility that uses batch (.bat) files to streamline the se
 
 # Notes
 • The scripts launcher creates a local version of the gui inside the users temp folder. This allows this script to be more portable and be dragged into any folder containing a scripts folder and the .bat will be able to find the .py files.
+
 • The libraries that are installed are defined wihtin the .bat file, this could be altered to use a requirements file if it exists.
+
 • This program should work with Anaconda but I have not tested it as much.
 
 
