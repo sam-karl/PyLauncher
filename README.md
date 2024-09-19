@@ -1,4 +1,4 @@
-# PyLuancher
+# PyLauncher
 PyLauncher is a simple utility that uses batch (.bat) files to streamline the setup and management of Python environments. It checks if Python is installed, installs it if necessary (along with required dependencies), and offers two main functionalities:
 
 1. Flask Web Launcher: Launches a Flask app to serve static built web files.
