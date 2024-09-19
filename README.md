@@ -4,6 +4,8 @@ PyLauncher is a simple utility that uses batch (.bat) files to streamline the se
 1. Flask Web Launcher: Launches a Flask app to serve static built web files.
 2. Script Launcher: Looks for Python scripts within a scripts folder and presents a GUI for selecting and launching the desired script.
 
+I originally created this script to enable my corporate team to easily use the Python scripts and web apps I developed. It requires no technical knowledge of environment management or dependency installation, making it accessible for all users.
+
 # Getting Started
 • Windows OS: PyLauncher uses batch files (.bat), so it's designed for Windows environments.
 
