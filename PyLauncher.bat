@@ -96,18 +96,16 @@ del "%TEMP%\pip_list.txt"
 REM Change back to the original directory
 popd
 REM Switch to Python code
-set TMPFILE=%TEMP%\program_launcher_temp.py
+set TMPFILE=%TEMP%\PyLauncher_Temp.py
 del %TMPFILE%
-echo Python code starting...
-echo #Imports in HUSpy.py>> %TMPFILE%       
+echo Python code starting...   
 echo from glob import glob>> %TMPFILE%      
 echo import os>> %TMPFILE%      
 echo import sys>> %TMPFILE%     
 echo import subprocess>> %TMPFILE%     
 echo from tkinter import *>> %TMPFILE%      
 echo import tkinter as tk>> %TMPFILE%       
-echo from tkinter import ttk>> %TMPFILE%       
-echo #G:\Engineering\Auto\Production Support\Support Software\HUSpy.py>> %TMPFILE%      
+echo from tkinter import ttk>> %TMPFILE%        
 echo # Get the path to the current script or frozen executable>> %TMPFILE%      
 echo try:>> %TMPFILE%       
 echo     python_exe = sys.argv[1]>> %TMPFILE%    
@@ -117,8 +115,8 @@ echo     python_exe = ''>> %TMPFILE%
 echo     app_path = os.path.dirname(os.path.abspath(__file__))>> %TMPFILE%
 echo # Get a list of all Python files in the app directory>> %TMPFILE%      
 echo all_files = glob('{}/**/*.{}'.format(app_path, 'py'), recursive=True)>> %TMPFILE%     
-echo # Filter out files with a specific name (e.g. 'HUSpy.py')>> %TMPFILE%      
-echo python_files = [f for f in all_files if not f.endswith('HUSpy.py')]>> %TMPFILE%        
+echo # Filter out files with a specific name (e.g. 'PyLauncher_Temp.py')>> %TMPFILE%      
+echo python_files = [f for f in all_files if not f.endswith('PyLauncher_Temp.py')]>> %TMPFILE%        
 echo # Get the name of each Python file (without the .py extension)>> %TMPFILE%     
 echo name_list = [os.path.splitext(os.path.basename(f))[0] for f in python_files]>> %TMPFILE%    
 echo def open_program(i, python_files):>> %TMPFILE%     
@@ -136,7 +134,7 @@ echo # Get the full path to the Python executable from the command line argument
        
 echo # Create the GUI>> %TMPFILE%       
 echo root = tk.Tk()>> %TMPFILE%     
-echo root.title('HUSpy')>> %TMPFILE%
+echo root.title('PyLauncher')>> %TMPFILE%
 echo dark_style = ttk.Style()>> %TMPFILE%       
 echo dark_style.theme_use('clam')>> %TMPFILE%       
 echo dark_style.configure('.', background='#3E3E3E', foreground='#F8F8F8', font=('TkDefaultFont', 11))>> %TMPFILE%      
