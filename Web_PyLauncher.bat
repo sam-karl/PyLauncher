@@ -1,6 +1,6 @@
 @echo off
 REM List of libraries to check for
-set "libraries= pandas,matplotlib,pyodbc,sqlalchemy,tkcalendar,tk,openpyxl,streamlit, pymssql, xlsxwriter, flask, python-dateutil, scipy, apscheduler"
+set "libraries= pandas,matplotlib,pyodbc,sqlalchemy, tk,openpyxl, pymssql, flask, python-dateutil, scipy"
 set python_path=""
 set pip_folder=""
 set python_locations=C:\Anaconda;%userprofile%\Anaconda;%userprofile%\Miniconda;C:\Python,%userprofile%\AppData\Local\Continuum\anaconda
